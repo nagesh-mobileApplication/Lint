@@ -63,6 +63,8 @@ android {
         // Specify report locations using layout.buildDirectory
         htmlOutput = layout.buildDirectory.file("reports/lint/lint-report.html").get().asFile
         xmlOutput = layout.buildDirectory.file("reports/lint/lint-report.xml").get().asFile
+
+        checkDependencies = true
     }
 }
 
